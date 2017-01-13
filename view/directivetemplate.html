@@ -1,0 +1,23 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" ng-click = "ctrl1.collapsed()">
+        <h4>Name: {{ctrl1.us.name}}</h4>
+    </div>
+    <div class="panel-body" ng-show="ctrl1.collapse">
+        <address ></address>
+        <div>
+            <h4>Friends:</h4>
+            <ul>
+                <li ng-repeat = "friend in ctrl1.us.friends" >
+                    {{friend}}
+                    <remove-friend></remove-friend>
+                </li>
+            </ul>
+            <div ng-show="ctrl1.us.rank">
+                Rank : {{ctrl1.us.rank}}
+            </div>
+            <button ng-hide="ctrl1.us.rank"class="btn btn-success" ng-click="ctrl1.knightMe(ctrl1.us)">Knight Me</button>
+        </div>
+
+    </div>
+
+</div>

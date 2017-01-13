@@ -1,0 +1,8 @@
+
+<div ng-show = "addctrl.collapse" ng-click="addctrl.collapsed(ctrl1.user)">
+    <h4>Address: </h4>
+    {{ctrl1.us.address.street}}<br/>
+    {{ctrl1.us.address.City}}<br/>
+    {{ctrl1.us.address.state}}
+</div>
+<div ng-click = "addctrl.expand()" ng-show = "!addctrl.collapse"><h4>Click here to get Address....</h4></div>

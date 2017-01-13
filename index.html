@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Working with angular directives</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-controller = "myCtrl as ctrl">
+    <!-- Binding directive's scope to controller's scope using person = ctrl.user as we've spacified us: '=person' so that we can use person in html instead of us scope -->
+    <my-cust-directive person="ctrl.user" calss="container" style="padding-top: 30px"></my-cust-directive>
+    <my-cust-directive person="ctrl.user1" calss="container" style="padding-top: 30px"></my-cust-directive>
+    <my-cust-directive person="ctrl.user2" calss="container" style="padding-top: 30px"></my-cust-directive>
+    <my-cust-directive person="ctrl.user3" calss="container" style="padding-top: 30px"></my-cust-directive>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/app.module/appModule.js"></script>
+    <script type="text/javascript" src="app/controllers/appController.js"></script>
+    <script type="text/javascript" src="app/app.directives/appDirectivee.js"></script>
+    <script type="text/javascript" src="app/app.directives/removeFriend.js"></script>
+    <script type="text/javascript" src="app/app.directives/addressDirective.js"></script>
+</body>
+</html>

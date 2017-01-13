@@ -1,0 +1,6 @@
+
+<span class="glyphicon glyphicon-remove" style="cursor: pointer;" ng-click = "removefrd.removeFriend()" ng-show="!removefrd.confirmremove"></span>
+<span ng-show="removefrd.confirmremove">
+    <button class="btn btn-xs btn-success" ng-click="removefrd.remove(ctrl1.us.friends,$index)">Remove</button>
+    <button class="btn btn-xs btn-danger" ng-click="removefrd.cancelRemove()">Cancel</button>
+</span>
